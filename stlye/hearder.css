@@ -1,0 +1,79 @@
+/* Default styles */
+
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  box-sizing: border-box; /* Ensure consistent box model */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Utilize space-between for better responsiveness */
+  padding: 10px; /* Reduce padding for smaller screens */
+  z-index: 1000;
+  background-color: #1a7503;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.logo img {
+  height: 40px; /* Adjust logo height for smaller screens */
+}
+
+.nav ul {
+  display: flex;
+  gap: 10px; /* Reduce gap between menu items for smaller screens */
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-in button {
+  width: auto; /* Adjust button width based on content */
+  height: 30px; /* Adjust button height for smaller screens */
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #1a7503;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .logo img {
+    height: 30px; /* Decrease logo height for smaller screens */
+  }
+
+  .nav ul {
+    gap: 5px; /* Further reduce gap between menu items for smaller screens */
+  }
+
+  .sign-in button {
+    height: 25px; /* Further decrease button height for smaller screens */
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+}

@@ -1,0 +1,362 @@
+
+button{
+  cursor: pointer;
+}
+.welcome-message { 
+  height:530px ; /* Make the section cover the full viewport height */
+  background-image: url('/images/pexels-nc-farm-bureau-mark-2886937.jpg'); /* Update with your image path */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+margin-bottom: 170px;
+
+}
+.welcome-message-text{
+    padding: 100px;
+ 
+}
+
+.welcome-message h1 {
+  width: 400px;
+  height: 90px;
+  font-weight: 700;
+  color: white;
+  margin-top: 100px;
+}
+
+.welcome-message h4 {
+  height: 23px;
+  width: 400px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+.features-section{
+  margin-top: -120px;
+  padding: 100px;
+}
+.welcome-message button {
+  height: 44px;
+  width: 133px;
+  background-color: #BFA5A5;
+  color: black;
+  border: none;
+}
+
+
+ h1{
+  font-weight: 600;
+}
+.features-container {
+  margin-top: -200px;
+  display: flex;
+  gap: 30px;
+   
+  width: 100%; /* or any specific width */
+  height: 669px; /* or any specific height */
+  background-image: url('/images/hero-background.jpeg');
+  background-size: auto 500px; /* scale the height to 100% of the container's height */
+  background-position: right; /* positions the image on the right side */
+  background-repeat: no-repeat; /* prevents the image from repeating */
+}
+
+.feature-text{
+  margin-top: 13px;
+}
+
+.features-box {
+  position: relative; /* Needed for the pseudo-element */
+  margin-top: 200px;
+  width: 290px;
+  height: 260px;
+  border-radius: 19px;
+  background-color: #28601A;
+  text-align: center;
+  flex: 1; /* Make all boxes take equal space */
+  overflow: hidden; /* Ensure pseudo-element does not overflow */
+}
+
+.features-box.opaque-background {
+  background-color: transparent; /* Ensure the background is transparent */
+}
+
+.features-box.opaque-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CED11A; /* The desired background color */
+  opacity: 0.4; /* The desired opacity */
+  z-index: 0; /* Place the pseudo-element behind the content */
+}
+
+.feature-icon {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  margin-right: 240px;
+  position: relative;
+  z-index: 1; /* Ensure the icon is above the pseudo-element */
+}
+
+.feature-content {
+  position: relative; /* Ensure the content is above the pseudo-element */
+  z-index: 1; /* Place the content above the pseudo-element */
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+}
+
+.feature-content h2 {
+  font-weight: 500;
+  margin: 0; /* Remove default margin */
+}
+
+.feature-content h4 {
+  margin: 5px 0; /* Adjust margin as needed */
+}
+
+.Explore-button {
+  background: #D0BFFF;
+  margin-top: 20px;
+  height: 58.43px;
+  width: 222.5px;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Optional: rounded corners */
+  position: relative;
+  z-index: 1; /* Ensure the button is above the pseudo-element */
+  font-weight: 600;
+}
+
+.feature-content a{
+ color: white;
+ list-style: none;
+ text-decoration: none;
+  justify-content: center;
+}
+.testimonials{
+  padding: 100px;
+  margin-top:-80px ;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonials h1{
+  font-weight: 600;
+  width: 338.18px;
+  height:182px; 
+}
+
+.testimonials button{
+  width: 250px;
+  border: none;
+  background-color: #28601A;
+  height:49px ;
+  font-weight: 600;
+}
+.content-box{
+  width: 643px;
+  height:182px ;
+}
+
+.image-container img{
+width: 500px;
+height: 400px;
+}
+
+.about-us{
+  padding: 100px;
+  margin-top:-80px ;
+ 
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a7503;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.learn-more-button:hover {
+  background-color: #145b02; /* Change background color on hover */
+}
+
+.about-us h1{
+  font-weight: 600;
+}
+
+.about-us-text{
+ width:300px ;
+
+}
+.about-us-content{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+}
+
+.about-us-content img{
+   width: 400px;
+   height: 400px;
+}
+
+.about-us-content button{
+   width: 171px;
+   height: 40px;
+   background-color: #28601A;
+   border:none;
+   font-weight: 600;
+}
+
+
+footer {
+  background-color: #288810;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.fa-brands {
+  margin-top: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-brands:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+
+/* Default styles */
+
+/* Existing styles remain unchanged */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for the header */
+  .header {
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+    gap: 20px; /* Reduce the gap between elements */
+  }
+
+  .logo img {
+    height: 40px; /* Decrease logo height */
+  }
+
+  .nav ul {
+    gap: 10px; /* Reduce the gap between nav items */
+  }
+
+  .sign-in button {
+    width: auto; /* Adjust button width based on content */
+    padding: 10px; /* Add padding to buttons */
+  }
+
+  /* Adjustments for the welcome message section */
+  .welcome-message {
+    height: auto; /* Adjust height to fit content */
+    padding: 50px; /* Reduce padding for smaller screens */
+  }
+
+  .welcome-message h1,
+  .welcome-message h4 {
+    width: auto; /* Adjust width to fit content */
+    text-align: center; /* Center text */
+  }
+
+  .welcome-message button {
+    width: 100%; /* Make button full width */
+  }
+
+  /* Adjustments for the features section */
+  .features-section {
+    padding: 50px; /* Reduce padding for smaller screens */
+    margin-top: -80px; /* Adjust top margin */
+  }
+
+  .features-container {
+    margin-top: -150px; /* Adjust top margin */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .feature-icon {
+    margin-right: 20px; /* Reduce margin for smaller screens */
+  }
+
+  /* Adjustments for testimonials section */
+  .testimonials {
+    padding: 50px; /* Reduce padding for smaller screens */
+    margin-top: -50px; /* Adjust top margin */
+  }
+
+  .testimonials h1 {
+    width: auto; /* Adjust width to fit content */
+    height: auto; /* Adjust height to fit content */
+    text-align: center; /* Center text */
+  }
+
+  .testimonials button {
+    width: 100%; /* Make button full width */
+  }
+
+  /* Adjustments for about us section */
+  .about-us {
+    padding: 50px; /* Reduce padding for smaller screens */
+    margin-top: -50px; /* Adjust top margin */
+  }
+
+  .about-us h1 {
+    width: auto; /* Adjust width to fit content */
+    text-align: center; /* Center text */
+  }
+
+  .about-us-content img {
+    width: 100%; /* Make image full width */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .about-us-content button {
+    width: 100%; /* Make button full width */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+
+  /* Adjustments for footer */
+  footer ul li {
+    display: block; /* Display list items as blocks */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+}
