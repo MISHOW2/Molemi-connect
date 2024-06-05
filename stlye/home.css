@@ -4,7 +4,7 @@ body{
 button{
   cursor: pointer;
 }
-/*.welcome-message { 
+.welcome-message { 
   height:530px ; 
   background-image: url('/images/pexels-nc-farm-bureau-mark-2886937.jpg'); 
   background-size: cover;
@@ -12,7 +12,7 @@ button{
   background-repeat: no-repeat; 
 margin-bottom: 170px;
 
-}*/
+}
 .welcome-message-text{
     padding: 100px;
  
