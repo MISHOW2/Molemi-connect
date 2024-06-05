@@ -1,37 +1,39 @@
-body{
-  overflow-x: hidden;
- }
-button{
-  cursor: pointer;
-}
-.welcome-message { 
-  height:530px ; /* Make the section cover the full viewport height */
-  background-image: url('/images/pexels-nc-farm-bureau-mark-2886937.jpg'); /* Update with your image path */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-margin-bottom: 170px;
+@media only screen and (max-width: 768px) {
+  
+  
+  
+  .welcome-message { 
+    width: 100vh;
+    background-image: url('/images/pexels-nc-farm-bureau-mark-2886937.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  margin-bottom: 170px;
+  
+  }
 
-}
-.welcome-message-text{
-    padding: 100px;
+  .welcome-message-text{
+    padding:100px;
+  
  
 }
 
 .welcome-message h1 {
-  width: 400px;
+  width: 500px;
   height: 90px;
+  font-size: 40px;
   font-weight: 700;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-top: 100px;
 }
 
 .welcome-message h4 {
   height: 23px;
   width: 400px;
+  font-size: 25px;
   font-weight: 700;
   color: rgb(255, 255, 255);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .features-section{
   margin-top: -120px;
@@ -49,28 +51,36 @@ margin-bottom: 170px;
  h1{
   font-weight: 600;
 }
+.features-section{
+  margin-bottom: 300px;
+  
+}
 .features-container {
-  margin-top: -200px;
-  display: flex;
+  margin-left: 130px;
+  text-align: center;
+  display: grid;
+  width: 600px;
   gap: 30px;
-   
-  width: 100%; /* or any specific width */
-  height: 669px; /* or any specific height */
+  height: 669px; 
   background-image: url('/images/hero-background.jpeg');
-  background-size: auto 500px; /* scale the height to 100% of the container's height */
-  background-position: right; /* positions the image on the right side */
-  background-repeat: no-repeat; /* prevents the image from repeating */
+  background-size: auto 500px; 
+  background-position: bottom; 
+  background-repeat: no-repeat;
 }
 
 .feature-text{
   margin-top: 13px;
 }
-
+.features-message{
+  margin-bottom: 300px;
+ 
+}
 .features-box {
   position: relative; /* Needed for the pseudo-element */
-  margin-top: 200px;
-  width: 290px;
+  margin-top: 20px;
+  width: 490px;
   height: 260px;
+
   border-radius: 19px;
   background-color: #28601A;
   text-align: center;
@@ -100,6 +110,7 @@ margin-bottom: 170px;
   height: 50px; /* Adjust the size as needed */
   margin-right: 240px;
   position: relative;
+  right:100px;
   z-index: 1; /* Ensure the icon is above the pseudo-element */
 }
 
@@ -142,23 +153,26 @@ margin-bottom: 170px;
   justify-content: center;
 }
 .testimonials{
-  padding: 100px;
-  margin-top:-80px ;
-  display: flex;
-  flex-direction: row;
+  margin-left: 30px;
+  margin-top:80px ;
+display: grid;
+
 }
 
 .testimonials h1{
   font-weight: 600;
-  width: 338.18px;
+  width: 490px;
   height:182px; 
+  font-size: 48px;
 }
-
+.content-box {
+ margin-bottom: 230px;
+}
 .testimonials button{
   width: 250px;
   border: none;
   background-color: #28601A;
-  height:49px ;
+
   font-weight: 600;
 }
 .content-box{
@@ -166,18 +180,31 @@ margin-bottom: 170px;
   height:182px ;
 }
 
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a7503;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  height: 70px;
+  font-size: 30px;
+}
+
+
 .image-container img{
-width: 500px;
+
 height: 400px;
 }
 
 .about-us{
-  padding: 100px;
-  margin-top:-80px ;
- 
+  
+  margin-top:80px ;
+  margin-left:100px ;
 }
 
-/* Add this CSS to your existing stylesheet */
+
 
 .learn-more-button {
   display: inline-block;
@@ -187,6 +214,10 @@ height: 400px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  height: 70px;
+  font-size: 30px; 
+  width: 400px;
+  margin-bottom: 70px;
 }
 
 .learn-more-button:hover {
@@ -195,16 +226,16 @@ height: 400px;
 
 .about-us h1{
   font-weight: 600;
+  font-size: 48px;
 }
 
-.about-us-text{
+.about-us-text h1{
  width:300px ;
-
+ font-size: 48px;
 }
 .about-us-content{
-  display: flex;
-  flex-direction: row;
- justify-content: space-between;
+  display: grid;
+  
 }
 
 .about-us-content img{
@@ -225,7 +256,7 @@ footer {
   background-color: #288810;
   padding: 20px 0;
   text-align: center;
-  
+  width: 100vh;
 }
 
 footer ul {
@@ -262,9 +293,5 @@ footer ul li a {
 }
 
 
-/* Default styles */
 
-/* Existing styles remain unchanged */
-
-/* Responsive styles for smaller screens */
-
+}

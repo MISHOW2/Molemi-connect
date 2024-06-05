@@ -9,40 +9,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="stylesheet" href="stlye/smaller-screeens.css">
   <title>Molemi Connect</title>
 </head>
 <body>
-  <div class="header">
-     <div class="logo">
-      <a href="home.html"><img src="images/logo1.jpg" alt="" ></a>
-     </div>
-    <div class="nav">
-       <ul>
-    <li>
-      <a href="home.html">Home</a>
-    </li>
 
-    <li>
-      <a href="about-us.html">About Us</a>
-    </li>
 
-    <li>
-      <a href="contact-us.html">Contact Us</a>
-    </li>
-
-    <li>
-      <a href="product-services.html">Product and Services</a>
-    </li>
-
-   </ul>
+  <div class="header-container">
+    <button id="navToggle" class="nav-toggle">☰</button>
+    <div class="header">
+        <div class="logo">
+            <a href="home.html"><img src="images/logo1.jpg" alt="Logo"></a>
+        </div>
+        <div class="nav" id="navMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="product-services.html">Product and Services</a></li>
+            </ul>
+        </div>
+        <div class="sign-in">
+            <!-- Uncomment if needed -->
+            <!-- <button>Sign in</button>
+            <!-- <button style="background-color: #281088;color: white;">Sign Up</button> -->
+        </div>
     </div>
-  
-    <div class="sign-in">
-     <button>Sign in</button>
-     <button style="background-color: #281088;color: white;">Sign Up</button>
+    <div class="main-content">
+        <!-- Your main content goes here -->
     </div>
-  </div>
+</div>
 
 
     <div class="welcome-message">
@@ -63,7 +59,7 @@
 
      <div class="features-section">
         
-      <div>
+      <div class="features-message">
         <h1>
           Explore Our
         </h1>
@@ -114,7 +110,7 @@
             <h1>
               Molemi Connect has transformed how I manage my farm
             </h1>
-            <a href="testimonials.html" class="learn-more-button">Read More Testimonials</a>
+            <a href="testimonials.html" class="read-more-button">Read More Testimonials</a>
           </div>
             <div class="image-container">
               <img src="images/farm-owner.jpeg" alt="">
